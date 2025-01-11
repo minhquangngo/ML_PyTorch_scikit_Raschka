@@ -149,12 +149,12 @@ plt.ylabel('Petal length [standardized]')
 plt.legend(loc='upper left')
 
 plt.tight_layout()
-plt.savefig('figures/02_15_1.png', dpi=300)
+
 plt.show()
 
-plt.plot(range(1, len(ada_sgd.losses_) + 1), ada_sgd.losses_, marker='o')
+plt.plot(range(1, len(ada_sgd.errors_) + 1), ada_sgd.errors_, marker='o')
 plt.xlabel('Epochs')
 plt.ylabel('Average loss')
 
-plt.savefig('figures/02_15_2.png', dpi=300)
+
 plt.show()
