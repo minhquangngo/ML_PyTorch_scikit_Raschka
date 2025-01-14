@@ -111,6 +111,7 @@ adalineSGD_fit = AdalineStochasticGD().input(X,y)
 adalineSGD_pred = adalineSGD_fit.predict(X_test)
 print(adalineSGD_pred)
 
+## The plot decision region is taken from the book 
 def plot_decision_regions(X, y, classifier, resolution=0.02):
 
     # setup marker generator and color map
